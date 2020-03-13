@@ -1,0 +1,5 @@
+Release 1.0.46 introduced input(pre-filter) and output(post-filter) macros for each of our detection searches. These macros let you update a macro definition once and then apply the new definition across all detections that leverage that macro. These changes will be local to your Splunk environment.
+
+input(pre-filter): This macro specifies your environment-specific configurations (index, source, sourcetype, etc.) to get the specific data sources that you require. Replace the macro definition with configurations for your Splunk environment.
+output(post-filter): This macro specifies your environment-specific values (dest, user, etc,), to filter out known false positives. Replace the macro definition with values that you'd like to exclude from detection results. Think of this as whitelisting/blacklisting using macros.
+Note: Coming soon is an improved naming convention that will be consistent across all of our detections, investigations, and baselines.
