@@ -1,4 +1,4 @@
-# Usage
+
 The Splunk Security Content Exchange can be used via:
 
 #### [Splunk App](https://github.com/splunk/security-content/releases)
