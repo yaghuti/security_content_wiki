@@ -29,10 +29,10 @@ At the moment, we can only accept pull requests submitted from either:
 If you wish to be a contributing member of our community, please see the agreement [for individuals](https://www.splunk.com/goto/individualcontributions) or [for organizations](https://www.splunk.com/goto/contributions).
 
 ##### Code of Conduct
-Please make sure to read and observe our [Code of Conduct](contributing/code-of-conduct.md). Please follow it in all of your interactions involving the project.
+Please make sure to read and observe our [Code of Conduct](https://github.com/splunk/security-content/wiki/Code-of-Conduct). Please follow it in all of your interactions involving the project.
 
 ##### Setup Development Environment
-see [Developing section](https://github.com/splunk/security-content#developing)
+see [Developing Content](https://github.com/splunk/security-content/wiki/Developing-Content)
 
 ## Contribution Workflow
 Help is always welcome! For example, documentation can always use improvement. There's always code that can be clarified, functionality that can be extended, and tests to be added to guarantee behavior. If you see something you think should be fixed, don't be afraid to own it.
@@ -98,7 +98,7 @@ When reviewing PRs from others, [The Gentle Art of Patch Review](http://sage.the
 * Is the contribution architected correctly?
 * Is the contribution polished?
 
-For this project, we require at least one approval. A build from our continuous integration system must also be successful off of your branch. Please note that any new changes made with your existing pull request during review will automatically unapprove and retrigger another build/round of tests.
+For this project, we require at least one approval. A build from our continuous integration system must also be successful off of your branch. Please note that any new changes made with your existing pull request during review will automatically unapproved and re-trigger another build/round of tests.
 
 ##### Documentation
 We can always use improvements to our documentation! Anyone can contribute to these docs--whether you’re new to the project, you’ve been around a long time, or if you just can’t stand seeing typos. 
