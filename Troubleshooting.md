@@ -7,7 +7,8 @@
 
 * note that [requirements.txt](https://github.com/splunk/security-content/blob/develop/requirements.txt) hard codes the versions for packages we use [dependabot](https://dependabot.com/) to make sure we safely always upgrade to the latest versions. 
 
-
+### Testing Locally
+1.  Detection schema and jinja template related troubleshooting can be tested with: `python bin/generate.py -p . -o package`
 
 ## Support
 Please use the [GitHub Issue Tracker](https://github.com/splunk/security-content/issues) to submit bugs or request features.
