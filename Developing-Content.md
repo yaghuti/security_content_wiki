@@ -16,4 +16,13 @@ Before you begin, follow the steps to install **dependencies and pre-commit hook
 
 The pull request will trigger a CircleCI, a continuous-integration app that integrates with a VCS and automatically runs a series of steps every time that it detects a change to your repository. A CircleCI build consists of a series of steps, usually validation, generation and deployment. If your tests pass, you're good to go! A repository maintainer will make sure the PR makes it into the next release. Which will be deployed in the [ESCU app](https://splunkbase.splunk.com/app/3449/) and our [API](https://docs.splunkresearch.com/?version=latest). If the CircleCI check fails, refer to [troubleshooting](https://github.com/splunk/security-content/wiki/Troubleshooting) first, some problems are easily described by CI. If not do not worry, our team will work with you in the PR to make sure your content passes validation and its part of our next release! 
 
+# Testing and Validating Spec Changes
+
+Changes to spec along with validation of the fields described in the spec can be accomplished by modifying two files located in:
+
+1. github/security-content/spec
+2. github/security-content/docs/spec
+
+A markdown generation tool for testing changes to the spec needs to be manually installed and run against the relevant json.  The tool can be installed from: [jsonschema2md](https://github.com/adobe/jsonschema2md)
+
 For a more detailed explanation on how to contribute to the project, please see ["Contributing"](https://github.com/splunk/security-content/wiki/Contributing-to-the-Project)
