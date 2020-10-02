@@ -6,17 +6,17 @@ Manifests contain a number of mandatory and optional fields. You can see the ful
 
 
 #### Content Parts
-* [stories/](https://raw.githubusercontent.com/splunk/security-content/develop/stories/): All Analytic Stories 
-* [detections/](https://raw.githubusercontent.com/splunk/security-content/develop/detections/): Splunk Enterprise, Splunk UBA, and Splunk Phantom detections that power Analytic Stories
-* [deployments/](https://raw.githubusercontent.com/splunk/security-content/develop/deployments/): Deployment configurations for scheduling correlation searches in Enterprise Security
-* [responses/](https://raw.githubusercontent.com/splunk/security-content/develop/responses/): Automated Splunk Enterprise and Splunk Phantom responses triggered by Analytic Stories
-* [response_tasks/](https://raw.githubusercontent.com/splunk/security-content/develop/response_tasks/): These contains various types of tasks that an analyst would do after a detection has triggered. 
-* [baselines/](https://raw.githubusercontent.com/splunk/security-content/develop/baselines/): Splunk Phantom and Splunk Enterprise baseline searches needed to support detection searches in Analytic Stories
+* [stories/](https://github.com/splunk/security-content/tree/develop/stories/): All Analytic Stories 
+* [detections/](https://github.com/splunk/security-content/tree/develop/detections/): Splunk Enterprise, Splunk UBA, and Splunk Phantom detections that power Analytic Stories
+* [deployments/](https://github.com/splunk/security-content/tree/develop/deployments/): Deployment configurations for scheduling correlation searches in Enterprise Security
+* [responses/](https://github.com/splunk/security-content/tree/develop/responses/): Automated Splunk Enterprise and Splunk Phantom responses triggered by Analytic Stories
+* [response_tasks/](https://github.com/splunk/security-content/tree/develop/response_tasks/): These contains various types of tasks that an analyst would do after a detection has triggered. 
+* [baselines/](https://github.com/splunk/security-content/tree/develop/baselines/): Splunk Phantom and Splunk Enterprise baseline searches needed to support detection searches in Analytic Stories
 
 #### Supporting Parts
-* [package/](https://raw.githubusercontent.com/splunk/security-content/develop/package/): Splunk content app-source files, including lookups, binaries, and default config files
+* [package/](https://github.com/splunk/security-content/tree/develop/package/): Splunk content app-source files, including lookups, binaries, and default config files
 * [bin/](bin/): All binaries required to produce and test content
 
 # Docs
-* [docs/](https://raw.githubusercontent.com/splunk/security-content/develop/docs/): Documentation for all spec files
-* [spec/](https://raw.githubusercontent.com/splunk/security-content/develop/spec/): All spec files that describe the security content
+* [docs/](https://github.com/splunk/security-content/tree/develop/docs/): Documentation for all spec files
+* [spec/](https://github.com/splunk/security-content/tree/develop/spec/): All spec files that describe the security content
