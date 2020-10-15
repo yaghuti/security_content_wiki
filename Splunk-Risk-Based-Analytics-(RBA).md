@@ -57,7 +57,7 @@ This parameter describes the type of object defined in the `risk_object` tag.
  
 * Type `system` allows for asset correlation
 * Type `user` allows for identity correlation
-* Type `<string>` or any other string as input will suffice but may not 
+* Type `<string>` or any other string as input will suffice but will not correlate to an asset or identity in the RBA Framework. 
 
 Note again just as in the ``risk_object`` case the only restriction on the value input for this field is it must be a string. 
 
