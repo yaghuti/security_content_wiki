@@ -1,8 +1,8 @@
 # What is RBA
-A method of alerting on anomalous behavior using Splunk Enterprise Security. 
+A method of alerting on anomalous behavior using Splunk Enterprise Security Risk Based Alerting (RBA). 
 
 # Using
-In order to use RBA in any [detection](/detections) under the Splunk Security repository you must:
+In order to use RBA in any [detection](https://github.com/splunk/security-content/tree/develop/detections) under the Splunk Security repository you must:
 
 1. Tag the detection with a `risk_object_type` 
 2. Tag the detection with a `risk_object`
@@ -12,8 +12,7 @@ See below for details and examples on how to use each of these tags.
 
 ### Risk Object Tag
 
-Optional parameter for risk scoring meta-data associated to the detection. The `risk_object` field is the name of the risk object
-corresponding to the type of entity the risk is associated too.  
+The field name to use as the risk_object in the display of the risk scores in Splunk Enterprise Security. The `risk_object` value is selected based of the associated Splunk search output in the detection and maps to the type of entity of interest in the search output.    
 
 `risk_object`
 
@@ -23,8 +22,7 @@ corresponding to the type of entity the risk is associated too.
 
 ### Risk Object Values
 
-Possible field names can take the possible values:  ``risk_system``, ``src``, ``dest``, ``src_user``, ``user``, ``risk_hash``,
-``risk_network``, ``risk_host``, ``risk_other``.
+This parameters only restriction it must be a string.
 
 ### Risk Object Example 
 
@@ -47,8 +45,7 @@ tags:
 
 ### Risk Object Type Tag
 
-The corresponding entity type for the risk score associated to the optional tag ``risk_object_type``.  This is the type of 
-object associated to the value for the tag `risk_object`
+This parameter describes the type of object defined in the `risk_object` tag. 
 
 `risk_object_type`
 
@@ -57,9 +54,12 @@ object associated to the value for the tag `risk_object`
 * default `""`
 
 ### Risk Object Type Values
+ 
+* Type `system` allows for asset correlation
+* Type `user` allows for identity correlation
+* Type `<string>` or any other string as input will suffice but may not 
 
-Possible object types can take the possible values:  ``system``, ``user``, ``hash_values``, ``network_artifacts``, ``host_artifacts``, 
-``other``.
+Note again just as in the ``risk_object`` case the only restriction on the value input for this field is it must be a string. 
 
 ### Risk Object Type Example 
 
@@ -82,13 +82,13 @@ tags:
 
 ### Risk Object Score Tag
 
-The risk score corresponding to the entity described in `risk_object`.
+The risk score corresponding to the entity described in `risk_object`.  The score will be applied to risk modifiers used in the upstream RBA analytics and UI dashboards of Splunk Security Products.
 
 `risk_score`
 
 * is **optional**
 * type: `Integer`
-* default `0`
+* default `1`
 
 ### Risk Object Score Example 
 
