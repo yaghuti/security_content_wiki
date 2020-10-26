@@ -58,8 +58,15 @@ validate:
 ```
 
 ## Logical Flow Diagram 🚰
-
+ 
 ![](https://github.com/splunk/security-content/raw/add_gitlab_ci-all-tests/docs/static/ssa-testing.png)
+
+1. validate_ssa.py parses `detection.test.yml` test file, and associated `detection.yml` file.
+2. downloads the data for the test described in `detection.test.yml` _(see next section)_
+3. it extracts the `search` from the detection, and replaces SSA macros to read from the testing data instead of a stream
+4. it executes Humvee with the extracted search that reads from the testing data
+5. looks for errors in the status file if any
+7. reads the output file and verifies that passing condition are met
 
 ## Specifics
 
