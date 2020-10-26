@@ -54,7 +54,6 @@ validate:
   before_script:
     - pip3 install -r requirements.txt
   script:
-    - python3 bin/validate.py -p . -v
     - python3 bin/validate_ssa.py --skip-error tests/*/*
 ```
 
