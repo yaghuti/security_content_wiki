@@ -9,7 +9,7 @@ While this content is available via Splunk Enterprise Security, Enterprise Secur
 ### Table of Content
 
 1. [Installation and Usage](https://github.com/splunk/security-content/wiki/Installation-and-Usage)
-2. [Content. Structure](https://github.com/splunk/security-content/wiki/Content-Structure)
+2. [Content Structure](https://github.com/splunk/security-content/wiki/Content-Structure)
 3. [Customize to your Environment](https://github.com/splunk/security-content/wiki/Customize-to-Your-Environment)
 4. [Developing Content](https://github.com/splunk/security-content/wiki/Developing-Content)
 5. [Troubleshooting](https://github.com/splunk/security-content/wiki/Troubleshooting)
