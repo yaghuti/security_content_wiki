@@ -10,7 +10,33 @@ Hey did you know we strive to test all the detections we develop under the secur
 
 ## Manual Execution
 
-To execute a local test run: `python bin/validate_ssa.py --skip-errors --debug test_files tests/*/*.yml`
+As a developer you can run tests locally to find issues in your detections. Manual execution provides also debugging capabilities. `validate_ssa.py` can show you a sample of your input data, shows you the testing pipeline after the SSA macros are removed, and it can show you a sample of your pipeline's output.
+
+Here there are the three steps that should follow.
+
+*step 1*: Prepare your environment
+```
+virtualenv -p python3.7 venv && source venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+*step 2*: Read the help
+```
+python bin/validate_ssa.py -h
+```
+
+```
+usage: python bin/validate_ssa.py [-h] [--skip-errors] [--debug]
+                       test_files [test_files ...]
+```
+
+*step 3*: Execute all, or some tests
+
+```
+python bin/validate_ssa.py --skip-errors --debug test_files tests/*/*.yml
+```
+
+_Note: Currently the testing can only run inside Splunk's network due to dependencies on Humvee._
 
 ## Automated
 This runs as part of a [gitlabs CI pipeline](https://github.com/splunk/security-content/blob/add_gitlab_ci-all-tests/.gitlab-ci.yml) on PR via CI. 
