@@ -1,6 +1,6 @@
 # How releases are versioned
 
-Each Splunk Security Content release follows a 3 number structure: **\<major\>.\<minor\>.\<patch\>** for example `3.9.1`. Below is a explanation on what each number signifies and when do they change. 
+Each Splunk Security Content [release](https://github.com/splunk/security-content/releases) follows a 3 number structure: **\<major\>.\<minor\>.\<patch\>** for example `3.9.1`. Below is a explanation on what each number signifies and when do they change. 
 
 * **\<major\>** - this number pertains to the specification/schema version our content is adhering to, today we are in spec 3.0. This only changes when we make a schema change or update. 
 * **\<minor\>** - this number pertains to the update we are on, specifically every time a new piece of content (detection, story, response, etc.) is introduced this number is increased.  
