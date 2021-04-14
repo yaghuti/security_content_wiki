@@ -61,8 +61,9 @@ If you want to learn more, please consult this [tutorial on how pull requests wo
 
 Here's an overview of how you can make a pull request against this project:
 
-1. Fork the [security_content GitHub repository](https://github.com/splunk/security-content)
-2. Clone your fork using git and create a branch off of develop
+1. Fill out the [Splunk Contribution Agreement](https://www.splunk.com/goto/contributions).
+2. Fork the [security_content GitHub repository](https://github.com/splunk/security-content)
+3. Clone your fork using git and create a branch off of develop
 
     ```
     $ git clone git@github.com:YOUR_GITHUB_USERNAME/security-content.git
@@ -72,7 +73,7 @@ Here's an overview of how you can make a pull request against this project:
     $ git checkout -b your-bugfix-branch-name develop
     ```
     
-3. Make your changes, commit, and push (once your tests have passed)
+4. Make your changes, commit, and push (once your tests have passed)
 
     ```
     $ cd security-content
@@ -80,7 +81,7 @@ Here's an overview of how you can make a pull request against this project:
     $ git push 
     ```
     
-4. Submit a pull request through the GitHub website, using the changes from your forked codebase
+5. Submit a pull request through the GitHub website, using the changes from your forked codebase
 
 ##### Code Review
 There are two aspects of code review: giving and receiving.
