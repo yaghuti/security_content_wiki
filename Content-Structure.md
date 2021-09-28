@@ -9,12 +9,9 @@ Manifests contain a number of mandatory and optional fields. You can see the ful
 * [stories/](https://github.com/splunk/security-content/tree/develop/stories/): All Analytic Stories 
 * [detections/](https://github.com/splunk/security-content/tree/develop/detections/): Splunk Enterprise, Splunk UBA, and Splunk Phantom detections that power Analytic Stories
 * [deployments/](https://github.com/splunk/security-content/tree/develop/deployments/): Deployment configurations for scheduling correlation searches in Enterprise Security
-* [responses/](https://github.com/splunk/security-content/tree/develop/responses/): Automated Splunk Enterprise and Splunk Phantom responses triggered by Analytic Stories
-* [response_tasks/](https://github.com/splunk/security-content/tree/develop/response_tasks/): These contains various types of tasks that an analyst would do after a detection has triggered. 
-* [baselines/](https://github.com/splunk/security-content/tree/develop/baselines/): Splunk Phantom and Splunk Enterprise baseline searches needed to support detection searches in Analytic Stories
 
 #### Supporting Parts
-* [package/](https://github.com/splunk/security-content/tree/develop/package/): Splunk content app-source files, including lookups, binaries, and default config files
+* [dist/](https://github.com/splunk/security-content/tree/develop/dist/): Splunk content app-source files, including lookups, binaries, and default config files
 * [bin/](bin/): All binaries required to produce and test content
 
 # Docs
