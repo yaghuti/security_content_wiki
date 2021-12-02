@@ -12,4 +12,13 @@ See https://car.mitre.org/Glossary for inspiration.
 | Correlation | An analytic that correlates various detection results to correlate a high level threat and its primary purpose is to generate a notable. | Spreading Ransomware Infection | 
 | Investigation | An analytic that is used to investigate an entity or asset, usually executed after another analytic type finds results as a next step in the workflow. They are executed after a result is found as  | [AWS Investigate User Activities By ARN](https://github.com/splunk/security_content/blob/develop/detections/cloud/aws_investigate_user_activities_by_arn.yml) |
 
+Below is a table showing how each type is configured out of the box in ESCU. 
 
+| Analytic Type | Generates Notable | Increases Risk (RBA) | Triggers Playbook | Tied to a Dashboard | Runs on CRON Schedule | Enabled OOB |  
+| ------------- | ----------------- | -------------------- | ----------------- | ------------------- | --------------------- | ----------- |
+| Hunting | No | No | No | Yes | No | No |
+| TTP | Yes | Yes | Yes | No | Yes | No |
+| Baseline | No | Yes | Yes | No | Yes | No |
+| Anomaly | No | Yes | No | No | Yes | No |
+| Correlation | Yes | No | Yes | No | Yes | Yes |
+| Investigation | No | No | Yes | No | No | No |
