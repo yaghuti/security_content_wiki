@@ -1,4 +1,3 @@
-
 Splunk Security Content detections has a field called `type` these types will drive workflow in the future on the product, below are the current proposed types:
 
 See https://car.mitre.org/Glossary for inspiration.
