@@ -12,6 +12,7 @@ While this content is available via Splunk Enterprise Security, Enterprise Secur
 2. [Content Structure](https://github.com/splunk/security-content/wiki/Content-Structure)
 3. [Customize to your Environment](https://github.com/splunk/security-content/wiki/Customize-to-Your-Environment)
 4. [Developing Content](https://github.com/splunk/security-content/wiki/Developing-Content)
+5. [Analytic Types](https://github.com/splunk/security_content/wiki/Detection-Analytic-Types)
 5. [Troubleshooting](https://github.com/splunk/security-content/wiki/Troubleshooting)
 6. [Contributing to the Project](https://github.com/splunk/security-content/wiki/Contributing-to-the-Project)
 6. [Contributors](https://github.com/splunk/security-content/wiki/Contributors)
