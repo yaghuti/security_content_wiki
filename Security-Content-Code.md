@@ -3,6 +3,10 @@ The code in security content is using the following concepts to improve quality,
 - Software Engineering Design Patterns
 - Test Driven Development
 
+Concepts from the following books about clean architecture are followed to structure the code:
+- [Clean Architecture: A Craftsman’s Guide to Software Structure and Design](https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/)
+- [Implementing the Clean Architecture](https://leanpub.com/implementing-the-clean-architecture)
+
 # Domain Driven Design
 
 
