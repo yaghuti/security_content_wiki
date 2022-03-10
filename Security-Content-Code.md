@@ -25,6 +25,8 @@ An application needs to create the elements of a complex aggregate. The specific
 - Separate the construction of a complex object from its representation so that the same construction process can create different representations.
 - Parse a complex representation, create one of several targets.
 
+[More information](https://sourcemaking.com/design_patterns/builder)
+
 ## Factory
 
 ### Problem
@@ -35,6 +37,8 @@ A framework needs to standardize the architectural model for a range of applicat
 - Defining a "virtual" constructor.
 - The new operator considered harmful.
 
+[More information](https://sourcemaking.com/design_patterns/factory_method)
+
 ## Adapter
 
 ### Problem
@@ -44,5 +48,7 @@ An "off the shelf" component offers compelling functionality that you would like
 - Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
 - Wrap an existing class with a new interface.
 - Impedance match an old component to a new system
+
+[More information](https://sourcemaking.com/design_patterns/adapter)
 
 # Test Driven Development
