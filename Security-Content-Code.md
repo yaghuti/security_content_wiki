@@ -291,3 +291,78 @@ def test_cve_enrichment():
 ````
 
 [More information](https://www.guru99.com/test-driven-development.html)
+
+
+## Security Content Code Execution Flow
+The execution of contentctl is the following:
+1. Main executable contentctl.py
+2. Executes specific use case e.g. bin/contentctl/contentctl_core/application/use_case/generate.py
+3. Read all security content objects using factory e.g. bin/contentctl/contentctl_core/application/factory/factory.py
+  - Factory is using director and builder to read and enrich security content objects.
+4. Write security content object into files using adapter e.g. bin/contentctl/contentctl_infrastructure/adapter/obj_to_conf_adapter.py
+
+
+## Common Tasks
+#### Add additional validators for a specific security content obj such as detection
+- Simple validators are added into the security content object e.g. bin/contentctl/contentctl_core/domain/entities/detection.py. This validator validates if the detection name is smaller then 75 characters:
+````
+    @validator('name')
+    def name_max_length(cls, v):
+        if len(v) > 75:
+            raise ValueError('name is longer then 75 chars: ' + v)
+        return v
+````
+Complex validation which needs multiple security content objects such as detection + story is added into the use case validate under bin/contentctl/contentctl_core/application/use_case/validate.py
+````
+...
+    def validate_detection_exist_for_test(self, tests : list, detections: list):
+        for test in tests:
+            found_detection = False
+            for detection in detections:
+                if test.tests[0].file in detection.file_path:
+                     found_detection = True
+
+            if not found_detection:
+                ValueError("detection doesn't exist for test file: " + test.name)
+...
+````
+
+#### Add another enrichment step to a security content object such as detection
+First, add the new enrichment step into the interface class of the builder under:
+bin/contentctl/contentctl_core/application/builder/detection_builder.py
+````
+    @abc.abstractmethod
+    def addCve(self) -> None:
+        pass
+````
+Second, add the implementation of this new function under:
+bin/contentctl/contentctl_infrastructure/builder/security_content_detection_builder.py
+````
+...
+    def addCve(self) -> None:
+        self.security_content_obj.cve_enrichment = []
+        for cve in self.security_content_obj.tags.cve:
+            self.security_content_obj.cve_enrichment.append(CveEnrichment.enrich_cve(cve))
+...
+````
+Third, add the new enrichment step to the director under:
+bin/contentctl/contentctl_infrastructure/builder/security_content_director.py:
+````
+...
+    def constructDetection(self, builder: DetectionBuilder, path: str, deployments: list, playbooks: list, baselines: list, tests: list, attack_enrichment: dict, macros: list, lookups: list) -> None:
+        builder.reset()
+        builder.setObject(os.path.join(os.path.dirname(__file__), path))
+        builder.addDeployment(deployments)
+        builder.addRBA()
+        builder.addNesFields()
+        builder.addAnnotations()
+        builder.addMappings()
+        builder.addBaseline(baselines)
+        builder.addPlaybook(playbooks)
+        builder.addUnitTest(tests)
+        builder.addMitreAttackEnrichment(attack_enrichment)
+        builder.addMacros(macros)
+        builder.addLookups(lookups)
+        builder.addCve()
+...
+````
