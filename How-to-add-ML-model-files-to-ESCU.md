@@ -11,4 +11,4 @@
 3. In tests/ [<test_name.test>.yml](https://github.com/splunk/security_content/blob/develop/tests/endpoint/potentially_malicious_code_on_commandline.test.yml) with a reference to a test data set in [attack_data](https://github.com/splunk/attack_data) repository"
 
 
-**NOTE:** This is specifically for shipping pre trained models. The model files can be created either by leveraging `fit` command in MLTK or by other custom ML tools
+**NOTE:** This is specifically for shipping pre trained models. The model files can be created either by leveraging [`fit`](https://docs.splunk.com/Documentation/MLApp/latest/User/Customsearchcommands) command in MLTK or by other custom ML tools
