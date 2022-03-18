@@ -8,4 +8,7 @@
 - The actual model file ending with [<model_name>.mlmodel](https://github.com/splunk/security_content/blob/develop/lookups/__mlspl_unusual_commandline_detection.mlmodel)
 - A [<lookup_name>.yml file](https://github.com/splunk/security_content/blob/develop/lookups/__mlspl_unusual_commandline_detection.yml) that references the model file: 
 
-3. In tests/ [<test_name.test>.yml](https://github.com/splunk/security_content/blob/develop/tests/endpoint/potentially_malicious_code_on_commandline.test.yml) with a reference to a test data set in [attack_data](https://github.com/splunk/attack_data) repository
+3. In tests/ [<test_name.test>.yml](https://github.com/splunk/security_content/blob/develop/tests/endpoint/potentially_malicious_code_on_commandline.test.yml) with a reference to a test data set in [attack_data](https://github.com/splunk/attack_data) repository"
+
+
+**NOTE:** This is specifically for shipping pre trained models. The model files can be created either by leveraging `fit` command in MLTK or by other custom ML tools
