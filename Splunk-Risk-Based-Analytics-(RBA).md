@@ -26,7 +26,7 @@ This parameters only restriction it must be a string.
 
 ### Risk Object Example 
 
-```json
+```yaml
 tags:
   analytics_story:
   - AWS Suspicious Provisioning Activities
