@@ -1,4 +1,4 @@
-Each ESCU detection now comes with an attached risk_score value, this value is derive from a simple formula risk_score=(impact * confidence)/100. Where impact and confidence are 0-100 number values based on the detection authors judgement. Impact captures the effect the attack will have in an organization and confidence in how accurate the analytic is at catching said threat. This is also documented under each detections in [research.splunk.com](http://research.splunk.com/) see: https://research.splunk.com/endpoint/attempted_credential_dump_from_registry_via_reg_exe/#rba
+Each ESCU detection now comes with an attached risk_score value, this value is derived from a simple formula risk_score=(impact * confidence)/100. Where impact and confidence are 0-100 number values based on the detection author's judgment. Impact captures the effect the attack will have on an organization and confidence in how accurate the analytics is at catching said threat. This is also documented under each detections in [research.splunk.com](http://research.splunk.com/) see: https://research.splunk.com/endpoint/attempted_credential_dump_from_registry_via_reg_exe/#rba
 
 Impact and Confidence today are somewhat arbitrary base on the detection author. The rule of thumb we use is:
 
@@ -20,4 +20,8 @@ Impact and Confidence today are somewhat arbitrary base on the detection author.
 * Low confidence = might have false positive not a very tight rule could contain other results aside from what is intended
 * Medium confidence =  some false positives but unlikely
 * High confidence = the rule will catch exactly what the author expect to find
-* Extreme confidence = No way to get false positives, search is very tight to what exactly it looks for, no possibility for false positive 
+* Extreme confidence = No way to get false positives, search is very tight to what exactly it looks for, no possibility for false positive
+
+# Example Table
+![image](https://user-images.githubusercontent.com/1476868/187281619-950d2f16-68d4-4488-9a8e-012af10f2d3d.png)
+ 
