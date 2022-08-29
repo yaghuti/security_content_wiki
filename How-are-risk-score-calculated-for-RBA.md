@@ -24,4 +24,5 @@ Impact and Confidence today are somewhat arbitrary base on the detection author.
 
 # Example Table
 ![image](https://user-images.githubusercontent.com/1476868/187281619-950d2f16-68d4-4488-9a8e-012af10f2d3d.png)
+_credits to: Ryan Long_
  
