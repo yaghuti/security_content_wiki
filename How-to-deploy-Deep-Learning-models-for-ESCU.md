@@ -7,15 +7,15 @@ The steps are outlined as follows -
 2. Download the model artifacts
 3. Deploy model artifacts into Splunk app DSD
 
-## Set up Splunk App for Data Science and Deep Learning (DSDL)
+### Set up Splunk App for Data Science and Deep Learning (DSDL)
 1. Install the DSDL app (https://splunkbase.splunk.com/app/4607/) on Splunk instance and follow the steps in the Overview > User Guide.
 2. Additional information and FAQs are available here https://splunkbase.splunk.com/app/4607/#/details.
 
-## Download the model artifacts
+### Download the model artifacts
 1. Open the S3 bucket and download model file .tar.gz of interest from https://splunk-seal.s3.us-west-2.amazonaws.com/pretrained_<detection_name>_model_dsdl.tar.gz
 2. Download pretrained_<detection_name>_model_dsdl.ipynb from https://github.com/splunk/security_content/notebooks
 
-## Deploy the model artifacts
+### Deploy the model artifacts
 
 1. Login into the Splunk instance and launch the DSDL app.
 2. Select Containers from the drop-down menu and it should list all the containers.
