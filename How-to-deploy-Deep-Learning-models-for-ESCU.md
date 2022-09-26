@@ -1,4 +1,4 @@
-# Steps to deploy a pre-trained deep learning model for ESCU
+## Steps to deploy a pre-trained deep learning model for ESCU
 
 NOTE: The following instructions are specifically for deploying pre-trained deep learning models using Splunk App for Data Science and Deep Learning (DSDL).  The deployed models are then used with "apply" command in ESCU detections.
 
