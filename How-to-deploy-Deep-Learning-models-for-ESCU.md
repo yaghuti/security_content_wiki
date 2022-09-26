@@ -35,5 +35,5 @@ The steps are outlined as follows -
    					
     * Upload pretrained_<detection_name>_model_dsdl.ipynb notebook into notebooks folder using the upload option in Jupyter lab.
     * Save the notebook using the save option in Jupyter notebook. 
-    * Upload dga_model_dltk.json into notebooks/data folder.
+    * Upload pretrained_<detection_name>_model_dsdl.json into notebooks/data folder.
  7. The pre-trained model pretrained_<detection_name>_model_dsdl is now deployed within DSDL.
