@@ -5,7 +5,7 @@ NOTE: The following instructions are specifically for deploying pre-trained deep
 The steps are outlined as follows -
 1. Set up Splunk App for Data Science and Deep Learning (DSDL)
 2. Download the model artifacts
-3. Deploy model artifacts into Splunk app DSD
+3. Deploy model artifacts into Splunk app DSDL
 
 ### Set up Splunk App for Data Science and Deep Learning (DSDL)
 1. Install the DSDL app (https://splunkbase.splunk.com/app/4607/) on Splunk instance and follow the steps in the Overview > User Guide.
