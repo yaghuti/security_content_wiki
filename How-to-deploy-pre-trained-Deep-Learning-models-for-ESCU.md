@@ -39,7 +39,7 @@ The steps are outlined as follows -
          ```
           tar -xf app/model/data/pretrained_<model_name>_dsdl.tar.gz -C app/model/data
          ```			
-      This will extract the artifact pretrained_<model_name>__dsdl.tar.gz into a pretrained_<model_name>__dsdl directory under app/model/data				
+      This will extract the artifact pretrained_<model_name>_dsdl.tar.gz into a pretrained_<model_name>__dsdl directory under app/model/data				
     * Upload pretrained_<model_name>_dsdl.ipynb notebook into notebooks folder using the upload option in Jupyter lab.
     * Save the notebook using the save option in Jupyter notebook. 
     * Upload pretrained_<model_name>_dsdl.json into notebooks/data folder.
