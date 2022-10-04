@@ -13,6 +13,9 @@ The steps are outlined as follows -
 
 ### Download the model artifacts
 1. Download the pre-trained model file .tar.gz of interest from https://seal.splunkresearch.com/pretrained_<detection_name>_model_dsdl.tar.gz
+
+ Example: The pre trained model file for [Detect DGA domains using pretrained model in DSDL](https://github.com/splunk/security_content/blob/develop/detections/experimental/network/detect_dga_domains_using_pretrained_model_in_dsdl.yml) can be download from this link : [https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz](https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz)
+
 2. Download pretrained_<detection_name>_model_dsdl.ipynb from https://github.com/splunk/security_content/notebooks
 
 ### Deploy the model artifacts
