@@ -15,7 +15,7 @@ The steps are outlined as follows -
 1. Model artifacts follow the pattern pretrained_<model_name>_dsdl.tar.gz. Retrieve the model name as follows -
    * Look for _dsdl suffixed .yml files under the [lookups](https://github.com/splunk/security_content/tree/develop/lookups) directory. 
    * Verify the detection name in the description of the yml file.
-   * Look for the token that matches pretrained_[a-zA-Z_]+__dsdl.yml i.e., _the substring between pretrained_ and __dsdl substrings._
+   * Look for the token that matches pretrained_[a-zA-Z_]+_dsdl.yml i.e., _the substring between pretrained_ and __dsdl substrings._
    * This token is the model name.
     (The model name will be denoted as <model_name> in this document.)
 2. Download the pre-trained model file .tar.gz from https://seal.splunkresearch.com/pretrained_<model_name>_dsdl.tar.gz
@@ -39,7 +39,7 @@ The steps are outlined as follows -
          ```
           tar -xf app/model/data/pretrained_<model_name>_dsdl.tar.gz -C app/model/data
          ```			
-      This will extract the artifact pretrained_<model_name>_dsdl.tar.gz into a pretrained_<model_name>__dsdl directory under app/model/data				
+      This will extract the artifact pretrained_<model_name>_dsdl.tar.gz under app/model/data				
     * Upload pretrained_<model_name>_dsdl.ipynb notebook into notebooks folder using the upload option in Jupyter lab.
     * Save the notebook using the save option in Jupyter notebook. 
     * Upload pretrained_<model_name>_dsdl.json into notebooks/data folder.
