@@ -45,7 +45,9 @@ The steps are outlined as follows -
     * Upload pretrained_<model_name>_dsdl.json into notebooks/data folder.
  7. The pre-trained model pretrained_<model_name>_dsdl is now deployed within DSDL.
 
-Here is an example, that walks through detection "Detect DGA domains using pre-trained model in DSDL" model deployment
+
+
+### Example: Steps for deploying model for: "Detect DGA domains using pre-trained model in DSDL"
 
 1. Make sure the Splunk app for Data Science and Deep Learning (DSDL) is installed and set up.
 2. To retrieve the model name, open [lookups](https://github.com/splunk/security_content/tree/develop/lookups) directory and look for the _dsdl.yml file. (Currently, this the only [pretrained dsdl model file](https://github.com/splunk/security_content/blob/develop/lookups/__mlspl_pretrained_dga_model_dsdl.yml) available in the lookups directory)
