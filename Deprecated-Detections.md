@@ -14,9 +14,10 @@ Detections under the [deprecated](https://github.com/splunk/security_content/tre
 
 # When do we deprecate a detection
 
-- The attack or analytic is no longer relevant
-- STRT builds a better approach to the analytic
-- Uses a data source or TA no longer supported
+- The attack or analytic is no longer relevant.
+- STRT builds a better approach to the analytic.
+- Uses a data source or TA no longer supported.
+- When a data source becomes CIM compliant, we deprecate the _raw source type searches and convert them into a data model based search.
 - If we get enough bug reports and it does not make sense to maintain or meet our bar for quality
 
 
