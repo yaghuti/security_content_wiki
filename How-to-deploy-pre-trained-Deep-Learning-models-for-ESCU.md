@@ -22,7 +22,7 @@ The steps are outlined as follows -
 
  Example: The pre-trained model file for [Detect DGA domains using pre-trained model in DSDL](https://github.com/splunk/security_content/blob/develop/detections/experimental/network/detect_dga_domains_using_pretrained_model_in_dsdl.yml) can be downloaded from this link : [https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz](https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz)
 
-2. Download pretrained_<model_name>_dsdl.ipynb from https://github.com/splunk/security_content/notebooks
+2. Download pretrained_<model_name>_dsdl.ipynb from [here](https://github.com/splunk/security_content/tree/develop/notebooks)
 
 ### Deploy the model artifacts
 
