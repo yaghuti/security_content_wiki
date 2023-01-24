@@ -1,6 +1,6 @@
 ## Steps to deploy a pre-trained deep learning model for ESCU
 
-NOTE: The following instructions are specifically for deploying pre-trained deep learning models using Splunk App for Data Science and Deep Learning (DSDL).  The deployed models are then used with "apply" command in ESCU detections.
+NOTE: The following instructions are specifically for deploying pre-trained deep learning models using Splunk App for Data Science and Deep Learning (DSDL) in ESCU.  The deployed models are then used with "apply" command in ESCU detections.
 
 The steps are outlined as follows -
 1. Set up Splunk App for Data Science and Deep Learning (DSDL)
@@ -54,11 +54,10 @@ The steps are outlined as follows -
 3. The model name is dga_model which matches the pattern pretrained_[a-zA-Z_]+__dsdl.yml. Notice that <model_name> in pretrained_<model_name>_dsdl.tar.gz is replaced with dga_model.
 4. Model artifacts can be downloaded from this link : [https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz](https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz).
 5. Download the pretrained_dga_model_dsdl.ipynb Jupyter notebook from https://github.com/splunk/security_content/notebooks
-Download the artifacts .tar.gz file from the link - https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz
 * Download the pretrained_dga_model_dsdl.ipynb Jupyter notebook from here: [notebooks](https://github.com/splunk/security_content/notebooks)
-* Launch the Splunk app DSDL and click the Containers. This pretrained_dga_model_dsdl container should be listed.
+* Launch the Splunk app DSDL and click on Containers and pretrained_dga_model_dsdl container should be listed.
 * Select Container Image as Golden image 3.9 and Cluster target as per env setup and start the pretrained_dga_model_dsdl container.
-* The urls populate when the container is launched. Login to the Jupyter lab url. 
+* Wait for urls to populate for the container and then login to the Jupyter lab url. 
 * Below steps need to be followed inside Jupyter lab 
   * Upload the pretrained_dga_model_dsdl.tar.gz file into app/model/data path using the upload option in the jupyter notebook.
   * Extract the artifact pretrained_dga_model_dsdl.tar.gz using tar -xf app/model/data/pretrained_dga_model_dsdl.tar.gz -C app/model/data
