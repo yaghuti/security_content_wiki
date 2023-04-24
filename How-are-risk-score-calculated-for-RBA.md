@@ -26,3 +26,44 @@ Impact and Confidence today are somewhat arbitrary base on the detection author.
 ![image](https://user-images.githubusercontent.com/1476868/187281619-950d2f16-68d4-4488-9a8e-012af10f2d3d.png)
 _credits to: Ryan Long_
  
+### Using Observables and Roles to calculate risk score:
+
+- Observables
+```
+`   "Other"
+    "Unknown"
+    "Actor:
+    "Target"
+    "Attacker
+    "Victim"
+    "Parent Process"
+    "Child Process"
+    "Known Bad"
+    "Data Loss:
+    "Observer"
+```
+- Roles: 
+```
+    "Unknown"
+    "Hostname"
+    "IP Address"
+    "MAC Address"
+    "User Name"
+    "Email Address"
+    "URL String"
+    "File Name"
+    "File Hash"
+    "Process Name"
+    "Ressource UID"
+    "Endpoint"
+    "User"
+    "Email"
+    "Uniform Resource Locator"
+    "File"
+    "Process"
+    "Geo Location"
+    "Container
+    "Registry Key"
+    "Registry Value"
+    "Other"
+```
