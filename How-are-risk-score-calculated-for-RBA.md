@@ -27,8 +27,14 @@ Impact and Confidence today are somewhat arbitrary base on the detection author.
 _credits to: Ryan Long_
  
 ### Using Observables and Roles to calculate risk score:
+The risk and threat objects are created with the following logic:
+- When the observable type is `{'user', 'username', 'email address'}`: the risk object type is `user`
+- When the observable type is `{'device', 'endpoint', 'hostname', 'ip address'}` : the risk object is `system`
+- When the observable type is not matching the above: the risk_object is `other`
+- When the observable role is `Attacker`: this field will be a `threat_object`
 
-- Observables
+
+- Observables :
 ```
 `   "Other"
     "Unknown"
@@ -67,3 +73,4 @@ _credits to: Ryan Long_
     "Registry Value"
     "Other"
 ```
+
