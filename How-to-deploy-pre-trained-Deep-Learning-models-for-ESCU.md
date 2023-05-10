@@ -7,7 +7,6 @@ The steps are outlined as follows -
 2. Download the model artifacts
 3. Deploy model artifacts into Splunk app DSDL
 
-To deploy the DGA model, follow steps outlined [here]("Detect DGA domains using pre-trained model in DSDL") 
 
 ### Set up Splunk App for Data Science and Deep Learning (DSDL)
 1. Install the DSDL app (https://splunkbase.splunk.com/app/4607/) on Splunk instance and follow the steps in the Overview > User Guide.
@@ -60,9 +59,4 @@ To deploy the DGA model, follow steps outlined [here]("Detect DGA domains using 
     * Upload <detection_notebook_name>.json model configuration into notebooks/data folder.
     * Save the notebook using the save option in Jupyter notebook. 
  7. Start the container specific to the detection. 
-
-
-
-### Example: Steps for deploying model for: "Detect DGA domains using pre-trained model in DSDL"
-
 
