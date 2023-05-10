@@ -22,7 +22,9 @@ The steps are outlined as follows -
 
  Example: The pre-trained model file for [Detect DGA domains using pre-trained model in DSDL](https://github.com/splunk/security_content/blob/develop/detections/experimental/network/detect_dga_domains_using_pretrained_model_in_dsdl.yml) can be downloaded from this link : [https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz](https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz)
 
-2. Download pretrained_<model_name>_dsdl.ipynb from [here](https://github.com/splunk/security_content/tree/develop/notebooks)
+3. Download pretrained_<model_name>_dsdl.ipynb from [here](https://github.com/splunk/security_content/tree/develop/notebooks)
+4. Download pretrained_<model_name>_dsdl.json from [here](https://github.com/splunk/security_content/tree/develop/notebooks)
+
 
 ### Deploy the model artifacts
 
@@ -54,7 +56,7 @@ The steps are outlined as follows -
 3. The model name is dga_model which matches the pattern pretrained_[a-zA-Z_]+__dsdl.yml. Notice that <model_name> in pretrained_<model_name>_dsdl.tar.gz is replaced with dga_model.
 4. Model artifacts can be downloaded from this link : [https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz](https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz).
 5. Download the pretrained_dga_model_dsdl.ipynb Jupyter notebook from https://github.com/splunk/security_content/notebooks
-* Download the pretrained_dga_model_dsdl.ipynb Jupyter notebook from here: [notebooks](https://github.com/splunk/security_content/notebooks)
+* Download pretrained_<model_name>_dsdl.json from [here](https://github.com/splunk/security_content/tree/develop/notebooks)
 * Launch the Splunk app DSDL and click on Containers and pretrained_dga_model_dsdl container should be listed.
 * Select Container Image as Golden image 3.9 and Cluster target as per env setup and start the pretrained_dga_model_dsdl container.
 * Wait for urls to populate for the container and then login to the Jupyter lab url. 
