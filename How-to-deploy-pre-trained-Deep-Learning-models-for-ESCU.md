@@ -22,40 +22,22 @@ To deploy the DGA model, follow steps outlined [here]("Detect DGA domains using 
 | Detect DNS Tunneling using TXT record responses | [pre-trained model](https://seal.splunkresearch.com/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.tar.gz) |
 | Detect suspicious process names | [pre-trained model](https://seal.splunkresearch.com/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.tar.gz) |
 
-3. Download notebook .ipynb for the detection
+2. Download notebook .ipynb for the detection
 
-{| class="wikitable"
-  |+ Notebook location
-|-
-  ! Detection 
-  ! Notebook
-|-
-  | Detect DGA domains using pre-trained model in DSDL
-  | [notebook](https://github.com/splunk/security_content/blob/develop/notebooks/pretrained_dga_model_dsdl.ipynb)
-|-
-  | Detect DNS Tunneling using TXT record responses
-  | [notebook](https://github.com/splunk/security_content/blob/develop/notebooks/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.ipynb)
-|-
-  | Detect suspicious process names 
-  | [notebook](https://github.com/splunk/security_content/blob/develop/notebooks/detect_suspicious_processnames_using_pretrained_model_in_dsdl.ipynb)
-|}
+| Detection        | Notebook |
+| ----------- | ----------- |
+| Detect DGA domains using pre-trained model in DSDL | [notebook](https://github.com/splunk/security_content/blob/develop/notebooks/pretrained_dga_model_dsdl.ipynb) |
+| Detect DNS Tunneling using TXT record responses | [notebook](https://github.com/splunk/security_content/blob/develop/notebooks/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.ipynb) |
+| Detect suspicious process names | [notebook](https://github.com/splunk/security_content/blob/develop/notebooks/detect_suspicious_processnames_using_pretrained_model_in_dsdl.ipynb) |
 
-4. Download model configuration file .json for the detection 
-{| class="wikitable"
-  |+ Model Configuration
-|-
-  ! Detection 
-  ! Model Configuration .json
-|-
-  | Detect DGA domains using pre-trained model in DSDL
-  | [.json](https://github.com/splunk/security_content/blob/develop/notebooks/pretrained_dga_model_dsdl.json)
-|-
-  | Detect DNS Tunneling using TXT record responses
-  | [.json](https://github.com/splunk/security_content/blob/develop/notebooks/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.json)
-|-
-  | Detect suspicious process names 
-  | [.json](https://github.com/splunk/security_content/blob/develop/notebooks/detect_suspicious_processnames_using_pretrained_model_in_dsdl.json)
-|}
+
+3. Download model configuration file .json for the detection 
+
+| Detection        | .json file |
+| ----------- | ----------- |
+| Detect DGA domains using pre-trained model in DSDL | [.json](https://github.com/splunk/security_content/blob/develop/notebooks/pretrained_dga_model_dsdl.json) |
+| Detect DNS Tunneling using TXT record responses | [.json](https://github.com/splunk/security_content/blob/develop/notebooks/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.json) |
+| Detect suspicious process names | [.json](https://github.com/splunk/security_content/blob/develop/notebooks/detect_suspicious_processnames_using_pretrained_model_in_dsdl.json) |
 
 
 ### Deploy the model artifacts
