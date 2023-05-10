@@ -16,8 +16,8 @@ To deploy the DGA model, follow steps outlined [here]("Detect DGA domains using 
 ### Download the model artifacts
 1. Download the pre-trained model file .tar.gz from the link provided here
 
-{| class="Model location"
-  |+ Caption
+{| class="wikitable"
+  |+ Model location
 |-
   ! Detection 
   ! Model location
@@ -35,8 +35,8 @@ To deploy the DGA model, follow steps outlined [here]("Detect DGA domains using 
 
 3. Download notebook .ipynb for the detection
 
-{| class="Notebook location"
-  |+ Caption
+{| class="wikitable"
+  |+ Notebook location
 |-
   ! Detection 
   ! Notebook
@@ -52,8 +52,8 @@ To deploy the DGA model, follow steps outlined [here]("Detect DGA domains using 
 |}
 
 4. Download model configuration file .json for the detection 
-{| class="Model Configuration"
-  |+ Caption
+{| class="wikitable"
+  |+ Model Configuration
 |-
   ! Detection 
   ! Model Configuration .json
