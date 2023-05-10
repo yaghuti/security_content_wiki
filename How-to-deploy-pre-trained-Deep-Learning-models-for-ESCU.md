@@ -16,9 +16,9 @@ To deploy the DGA model, follow steps outlined [here]("Detect DGA domains using 
 ### Download the model artifacts
 1. Download the pre-trained model file .tar.gz from the link provided here.
 
-| Type        | Description | Example      |   
-| ----------- | ----------- |--------------|
-| TTP | A TTP analytic is designed to detect a certain adversary tactic, technique or procedure. | [Attempted Credential Dump From Registry via Reg exe](https://github.com/splunk/security_content/blob/develop/detections/endpoint/attempted_credential_dump_from_registry_via_reg_exe.yml) |
+| Detection        | Model |
+| ----------- | ----------- |
+| Detect DGA domains using pre-trained model in DSDL | [pre-trained model](https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz) |
 
 
 
