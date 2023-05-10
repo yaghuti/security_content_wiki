@@ -48,15 +48,15 @@ The steps are outlined as follows -
 5. Login into the Jupyter lab of dev container by clicking on the url, ex: http://{container_url}:port_num/lab? 
     * Use the password provided in the Overview > User Guide of DSDL app
 6. The below steps are performed within the Jupyter Lab of the container.
-    * Upload the pretrained_<model_name>_dsdl.tar.gz file into app/model/data path using the upload option in the Jupyter notebook.
+    * Upload the pre-trained model .tar.gz file into app/model/data path using the upload option in the Jupyter notebook.
     * Open a terminal on Jupyterlab and execute the following commands
 
          ```
-          tar -xf app/model/data/<detection_model_name>.tar.gz -C app/model/data
+          tar -xf app/model/data/<pretrained_model_file_name>.tar.gz -C app/model/data
          ```			
-      This will extract the artifact <detection_model_name>.tar.gz under app/model/data				
-    * Upload <detection_notebook_name>.ipynb notebook into notebooks folder using the upload option in Jupyter lab.
-    * Upload <detection_notebook_name>.json model configuration into notebooks/data folder.
+      This will extract the artifact <pretrained_model_file_name>.tar.gz into app/model/data				
+    * Upload <detection>.ipynb notebook into notebooks folder using the upload option in Jupyter lab.
+    * Also, upload <detection>.json model configuration into notebooks/data folder.
     * Save the notebook using the save option in Jupyter notebook. 
  7. Start the container specific to the detection. 
 
