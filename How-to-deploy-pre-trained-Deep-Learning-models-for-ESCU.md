@@ -19,28 +19,8 @@ To deploy the DGA model, follow steps outlined [here]("Detect DGA domains using 
 | Detection        | Model |
 | ----------- | ----------- |
 | Detect DGA domains using pre-trained model in DSDL | [pre-trained model](https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz) |
-
-
-
-
-| Detection        | Model Location | Example      |
-| ----------- | ----------- |
-| Detect DGA domains using pre-trained model in DSDL | [pre-trained model](https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz) |
 | Detect DNS Tunneling using TXT record responses | [pre-trained model](https://seal.splunkresearch.com/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.tar.gz) |
-| Detect suspicious process names || [pre-trained model](https://seal.splunkresearch.com/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.tar.gz) |
-
-{| class="wikitable"
-|+ Model location
-|-
-! Detection !! Model location
-|-
-| Detect DGA domains using pre-trained model in DSDL || [pre-trained model](https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz)
-|-
-| Detect DNS Tunneling using TXT record responses || [pre-trained model](https://seal.splunkresearch.com/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.tar.gz)
-|-
-| Detect suspicious process names || [pre-trained model](https://seal.splunkresearch.com/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.tar.gz)
-|}
-
+| Detect suspicious process names | [pre-trained model](https://seal.splunkresearch.com/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.tar.gz) |
 
 3. Download notebook .ipynb for the detection
 
