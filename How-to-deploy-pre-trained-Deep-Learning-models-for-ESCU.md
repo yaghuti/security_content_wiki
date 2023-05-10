@@ -17,19 +17,15 @@ To deploy the DGA model, follow steps outlined [here]("Detect DGA domains using 
 1. Download the pre-trained model file .tar.gz from the link provided here
 
 {| class="wikitable"
-  |+ Model location
+|+ Model location
 |-
-  ! Detection 
-  ! Model location
+! Detection !! Model location
 |-
-  | Detect DGA domains using pre-trained model in DSDL
-  | [pre-trained model](https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz)
+| Detect DGA domains using pre-trained model in DSDL || [pre-trained model](https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz)
 |-
-  | Detect DNS Tunneling using TXT record responses
-  | [pre-trained model](https://seal.splunkresearch.com/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.tar.gz)
+| Detect DNS Tunneling using TXT record responses || [pre-trained model](https://seal.splunkresearch.com/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.tar.gz)
 |-
-  | Detect suspicious process names 
-  | [pre-trained model](https://seal.splunkresearch.com/detect_suspicious_processnames_using_pretrained_model_in_dsdl.tar.gz)
+| Detect suspicious process names || [pre-trained model](https://seal.splunkresearch.com/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.tar.gz)
 |}
 
 
