@@ -19,7 +19,8 @@ The steps are outlined as follows -
 | ----------- | ----------- |
 | Detect DGA domains using pre-trained model in DSDL | [pre-trained model](https://seal.splunkresearch.com/pretrained_dga_model_dsdl.tar.gz) |
 | Detect DNS Tunneling using TXT record responses | [pre-trained model](https://seal.splunkresearch.com/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.tar.gz) |
-| Detect suspicious process names | [pre-trained model](https://seal.splunkresearch.com/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.tar.gz) |
+| Detect suspicious process names | [pre-trained model](https://seal.splunkresearch.com/detect_suspicious_processnames_using_pretrained_model_in_dsdl.tar.gz) |
+| Detect DNS Data Exfiltration | [pre-trained model](https://seal.splunkresearch.com/detect_dns_data_exfiltration_using_pretrained_model_in_dsdl.tar.gz) |
 
 2. Download notebook .ipynb for the detection
 
@@ -28,6 +29,7 @@ The steps are outlined as follows -
 | Detect DGA domains using pre-trained model in DSDL | [notebook](https://github.com/splunk/security_content/blob/develop/notebooks/pretrained_dga_model_dsdl.ipynb) |
 | Detect DNS Tunneling using TXT record responses | [notebook](https://github.com/splunk/security_content/blob/develop/notebooks/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.ipynb) |
 | Detect suspicious process names | [notebook](https://github.com/splunk/security_content/blob/develop/notebooks/detect_suspicious_processnames_using_pretrained_model_in_dsdl.ipynb) |
+| Detect DNS Data Exfiltration | [notebook](https://github.com/splunk/security_content/blob/develop/notebooks/detect_dns_data_exfiltration_using_pretrained_model_in_dsdl.ipynb) |
 
 
 3. Download model configuration file .json for the detection 
@@ -37,6 +39,7 @@ The steps are outlined as follows -
 | Detect DGA domains using pre-trained model in DSDL | [.json](https://github.com/splunk/security_content/blob/develop/notebooks/pretrained_dga_model_dsdl.json) |
 | Detect DNS Tunneling using TXT record responses | [.json](https://github.com/splunk/security_content/blob/develop/notebooks/detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.json) |
 | Detect suspicious process names | [.json](https://github.com/splunk/security_content/blob/develop/notebooks/detect_suspicious_processnames_using_pretrained_model_in_dsdl.json) |
+| Detect DNS Data Exfiltration | [.json](https://github.com/splunk/security_content/blob/develop/notebooks/detect_dns_data_exfiltration_using_pretrained_model_in_dsdl.json) |
 
 
 ### Deploy the model artifacts
