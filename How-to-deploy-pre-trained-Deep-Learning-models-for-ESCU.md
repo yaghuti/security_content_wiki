@@ -47,7 +47,7 @@ The steps are outlined as follows -
 
 1. Login into the Splunk instance and launch the Splunk App for Data Science and Deep Learning (DSDL).
 2. Select Containers from the drop-down menu and it should list all the containers.
-3. Select Container Image as Golden image and Cluster target as per env setup and start the dev container.
+3. Select Container Image as Golden image 5.0.0 and Cluster target as per env setup and start the dev container.
 4. Wait for the container to start up and urls to populate for the container.
 5. Login into the Jupyter lab of dev container by clicking on the url, ex: http://{container_url}:port_num/lab? 
     * Use the password provided in the Overview > User Guide of DSDL app
