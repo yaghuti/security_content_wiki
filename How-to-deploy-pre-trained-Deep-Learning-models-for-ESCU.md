@@ -43,12 +43,7 @@ The steps are outlined as follows -
 
 4. Follow the below steps only if you are deploying the model to use outside of ESCU. For ex: in a simple SPL search using |apply command. Place these .mlmodel files into app context /lookup directory. For ex: etc/apps/mltk-container/lookups
 
-| Detection        | .json file |
-| ----------- | ----------- |
-| Detect DGA domains using pre-trained model in DSDL | [.mlmodel](https://github.com/splunk/security_content/blob/develop/lookups/__mlspl_pretrained_dga_model_dsdl.mlmodel) |
-| Detect DNS Tunneling using TXT record responses | [.mlmodel](https://github.com/splunk/security_content/blob/develop/lookups/__mlspl_detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.mlmodel) |
-| Detect suspicious process names | [.mlmodel](https://github.com/splunk/security_content/blob/develop/lookups/__mlspl_detect_suspicious_processnames_using_pretrained_model_in_dsdl.mlmodel) |
-| Detect DNS Data Exfiltration | [.mlmodel](https://github.com/splunk/security_content/blob/develop/lookups/__mlspl_detect_dns_data_exfiltration_using_pretrained_model_in_dsdl.mlmodel) |
+
 
 
 
