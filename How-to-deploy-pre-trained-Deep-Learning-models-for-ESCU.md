@@ -8,7 +8,7 @@ The steps are outlined as follows -
 3. Deploy model artifacts into Splunk app DSDL
 
 
-### Set up Splunk App for Data Science and Deep Learning 5.0.0(DSDL)
+### Set up Splunk App for Data Science and Deep Learning (DSDL)
 1. Install the DSDL app (https://splunkbase.splunk.com/app/4607/) on Splunk instance and follow the steps in the Overview > User Guide.
 2. Additional information and FAQs are available here https://splunkbase.splunk.com/app/4607/#/details.
 
@@ -47,7 +47,7 @@ The steps are outlined as follows -
 | Detection        | .mlmodel file |
 | ----------- | ----------- |
 | Detect DGA domains using pre-trained model in DSDL | [.mlmodel](https://github.com/splunk/security_content/blob/develop/lookups/__mlspl_pretrained_dga_model_dsdl.mlmodel) |
-
+| Detect DNS Tunneling using TXT record responses | [.mlmodel](https://github.com/splunk/security_content/blob/develop/lookups/__mlspl_detect_suspicious_dns_txt_records_using_pretrained_model_in_dsdl.mlmodel) |
 
 
 ### Deploy the model artifacts
