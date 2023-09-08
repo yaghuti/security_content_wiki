@@ -43,6 +43,7 @@ The steps are outlined as follows -
 
 4. Follow the below steps only if you are deploying the model to use outside of ESCU. For ex: in a simple SPL search using |apply command. 
    Place these .mlmodel files into app context /lookup directory. For ex: etc/apps/mltk-container/lookups
+  
 
 | Detection        | .mlmodel file |
 | ----------- | ----------- |
