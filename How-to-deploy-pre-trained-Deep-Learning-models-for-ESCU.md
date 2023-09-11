@@ -1,16 +1,17 @@
 ## Steps to deploy a pre-trained deep learning model for ESCU
 
-NOTE: The following instructions are specifically for deploying pre-trained deep learning models using Splunk App for Data Science and Deep Learning (DSDL) in ESCU.  The deployed models are then used with "apply" command in ESCU detections.
+NOTE: The following instructions are specifically for deploying pre-trained deep learning models using Splunk App for Data Science and Deep Learning (DSDL)5.0 in ESCU.  The deployed models are then used with "apply" command in ESCU detections.
 
 The steps are outlined as follows -
-1. Set up Splunk App for Data Science and Deep Learning (DSDL)
+1. Set up Splunk App for Data Science and Deep Learning (DSDL) 5.0
 2. Download the model artifacts
 3. Deploy model artifacts into Splunk app DSDL
 
 
 ### Set up Splunk App for Data Science and Deep Learning (DSDL)
-1. Install the DSDL app (https://splunkbase.splunk.com/app/4607/) on Splunk instance and follow the steps in the Overview > User Guide.
+1. Install the DSDL app (https://splunkbase.splunk.com/app/4607/)5.0 on Splunk instance and follow the steps in the Overview > User Guide.
 2. Additional information and FAQs are available here https://splunkbase.splunk.com/app/4607/#/details.
+3. Ensure the containers use Golden Image CPU 5.0.0
 
 ### Download the model artifacts
 1. Download the pre-trained model file .tar.gz from the link provided here.
@@ -56,7 +57,7 @@ The steps are outlined as follows -
 
 1. Login into the Splunk instance and launch the Splunk App for Data Science and Deep Learning (DSDL).
 2. Select Containers from the drop-down menu and it should list all the containers.
-3. Select Container Image as Golden image CPU and Cluster target as per env setup and start the dev container.
+3. Select Container Image as Golden image CPU 5.0.0 and Cluster target as per env setup and start the dev container.
 4. Wait for the container to start up and urls to populate for the container.
 5. Login into the Jupyter lab of dev container by clicking on the url, ex: http://{container_url}:port_num/lab? 
     * Use the password provided in the Overview > User Guide of DSDL app
