@@ -9,7 +9,7 @@ The steps are outlined as follows -
 
 
 ### Set up Splunk App for Data Science and Deep Learning (DSDL)
-1. Install the DSDL app (https://splunkbase.splunk.com/app/4607/)5.0 on Splunk instance and follow the steps in the Overview > User Guide.
+1. Install the DSDL app (https://splunkbase.splunk.com/app/4607/) 5.0 on Splunk instance and follow the steps in the Overview > User Guide.
 2. Additional information and FAQs are available here https://splunkbase.splunk.com/app/4607/#/details.
 3. Ensure the containers use Golden Image CPU 5.0.0
 
