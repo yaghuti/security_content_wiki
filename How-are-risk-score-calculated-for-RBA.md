@@ -35,6 +35,8 @@ The risk and threat objects are created with the following logic:
 
 
 - Observables :
+
+- Role:(Choose one or many of the following)
 ```
 `   "Other"
     "Unknown"
@@ -48,7 +50,7 @@ The risk and threat objects are created with the following logic:
     "Data Loss:
     "Observer"
 ```
-- Roles: 
+- Types: (Choose one)
 ```
     "Unknown"
     "Hostname"
