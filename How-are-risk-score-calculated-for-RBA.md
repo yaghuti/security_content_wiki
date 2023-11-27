@@ -28,13 +28,23 @@ _credits to: Ryan Long_
  
 ### Using Observables and Roles to calculate risk score:
 The risk and threat objects are created with the following logic:
-- When the observable type is `{'user', 'username', 'email address'}`: the risk object type is `user`
-- When the observable type is `{'device', 'endpoint', 'hostname', 'ip address'}` : the risk object is `system`
-- When the observable type is not matching the above: the risk_object is `other`
-- When the observable role is `Attacker`: this field will be a `threat_object`
+- When the observable **`type`** is **`'User', 'Username', 'Email Address'`**:
+    - The `risk_object_type` is `user` in savedsearches.conf
+    - The `risk_object_field` is the `name` of the observable in the detection.yml
 
+- When the observable **`type`** is **`'Device', 'Endpoint', 'Hostname', 'IP Address'`** :
+    - The `risk_object_type` is `system` in savedsearches.conf
+    - The `risk_object_field` is the `name` of the observable in the detection.yml
 
-- Observables :
+- When the observable **`type`** is **NOT** matching the above list:
+    - The `risk_object_type` is `other` in savedsearches.conf
+    - The `risk_object_field` is the `name` of the observable in the detection.yml
+
+- When the observable **`role`** is  **`Attacker`**: 
+    - The `threat_object_type` is the `type` of the observable in the detection.yml
+    - The `threat_object_field` is the `name` of the observable in the detection.yml
+
+### Observables :
 
 - Role:(Choose one or many of the following)
 ```
