@@ -66,9 +66,9 @@ The steps are outlined as follows -
     * Open a terminal on Jupyterlab and execute the following commands
 
          ```
-          tar -xf app/model/data/<pretrained_model_file_name>.tar.gz -C app/model/data/<pretrained_model_file_name>
+          tar -xf app/model/data/<pretrained_model_file_name>.tar.gz -C app/model/data/<pretrained_model_file_name>/
          ```			
-      This will extract the artifact `<pretrained_model_file_name>.tar.gz` into `app/model/data/<pretrained_model_file_name>`			
+      This will extract the artifact `<pretrained_model_file_name>.tar.gz` into `app/model/data/<pretrained_model_file_name>/`			
     * Upload <detection>.ipynb notebook into notebooks folder using the upload option in Jupyter lab.
     * Also, upload <detection>.json model configuration into notebooks/data folder.
     * Save the notebook using the save option in Jupyter notebook. 
