@@ -2,18 +2,18 @@ Each ESCU detection now comes with an attached risk_score value, this value is d
 
 Impact and Confidence today are somewhat arbitrary base on the detection author. The rule of thumb we use is:
 
-### Scoring 
-* 0-25 **low** impact/confidence
-* 25-50 **medium** impact/confidence
-* 50-80 **high** impact/confidence 
-* 80-100 **critical** impacting or certain
+### Scoring for impact and confidence 
+* 0-25 **low** 
+* 25-50 **medium** 
+* 50-80 **high** 
+* 80-100 **critical**
 
 ### Meaning of Impact values
 
 * Low impact = has very little repercussions to the organization
-* Medium impact = could cause damages to the org
-* High impact = requires investigation and analysis for the damages caused to the org
-* Extreme impact = likely requires forensic analysis and in I sent response to be involved
+* Medium impact = could cause damages to the organization
+* High impact = requires investigation and analysis for the damages caused to the organization
+* Extreme impact = likely requires forensic analysis and Incident Response team to be involved
 
 ### Meaning of Confidence values
 
