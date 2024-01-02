@@ -16,13 +16,13 @@ The rule of thumb we use is:
 
 ### Meaning of Impact values
 
-* Low Impact: These are threats that have minimal consequences for the organization. They might represent minor policy violations or low-level security risks that don't significantly compromise data, systems, or operations. Actions triggered by low impact rules often don't require immediate response but may need monitoring or periodic review.
+* **Low Impact**: These are threats that have minimal consequences for the organization. They might represent minor policy violations or low-level security risks that don't significantly compromise data, systems, or operations. Actions triggered by low impact rules often don't require immediate response but may need monitoring or periodic review.
 
-* Medium Impact: This category includes threats that could potentially cause moderate harm to the organization's assets, reputation, or operations. They might not be immediately critical but could escalate if not addressed. Medium impact rules typically warrant timely investigation to assess and mitigate potential risks.
+* **Medium Impact**: This category includes threats that could potentially cause moderate harm to the organization's assets, reputation, or operations. They might not be immediately critical but could escalate if not addressed. Medium impact rules typically warrant timely investigation to assess and mitigate potential risks.
 
-* High Impact: High impact threats pose a significant risk to the organization. They could lead to substantial data loss, service disruption, financial loss, or other serious consequences. Detection rules with high impact require immediate attention and action to prevent or limit damage.
+* **High Impact**: High impact threats pose a significant risk to the organization. They could lead to substantial data loss, service disruption, financial loss, or other serious consequences. Detection rules with high impact require immediate attention and action to prevent or limit damage.
 
-* Extremely High Impact: This highest level is reserved for the most severe threats, which pose an imminent and critical risk to the organization’s core operations, data security, or existence. These might include advanced persistent threats (APTs), major data breaches, or other catastrophic events. Extreme impact rules necessitate an urgent and comprehensive response, often involving multiple layers of the organization, including top management.
+* **Critical Impact**: This highest level is reserved for the most severe threats, which pose an imminent and critical risk to the organization’s core operations, data security, or existence. These might include advanced persistent threats (APTs), major data breaches, or other catastrophic events. Critical impact rules necessitate an urgent and comprehensive response, often involving multiple layers of the organization, including top management.
 
 ### Meaning of Confidence values
 
