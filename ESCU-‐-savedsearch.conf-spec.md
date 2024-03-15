@@ -41,10 +41,10 @@ This page provides detailed documentation for the ESCU saved search configuratio
   - The confidence level in the search's effectiveness, marked as "low, medium,high".
 
 #### Search Identification
-- **`action.escu.full_search_name`**
+- **`action.escu.full_search_name =  ESCU - <Detection Name> - Rule`**
   - The full name of the search within the ESCU framework.
-- **`action.escu.search_type`**
-  - Specifies the type of search, here a detection search.
+- **`action.escu.search_type = detection`**
+  - Specifies the type of search, here a detection search, investigation
 
 #### Product and Technology
 - **`action.escu.product = ["Splunk Enterprise", "Splunk Enterprise Security", "Splunk Cloud"]`**
