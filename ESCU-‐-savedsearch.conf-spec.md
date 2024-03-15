@@ -81,7 +81,6 @@ This page provides detailed documentation for the ESCU saved search configuratio
   - Disables real-time scheduling.
 
 #### Risk and Correlation (Enterprise Security related configs) 
-### General Settings
 - **`action.risk = 1`**
   - Enables risk-based actions based on the search results.
 - **`cron_schedule`**
@@ -97,7 +96,7 @@ This page provides detailed documentation for the ESCU saved search configuratio
 - **`alert.digest_mode = 1`**
   - Enables alert digest mode, aggregating alerts for efficiency.
 
-### Risk Settings
+#### Risk Settings
 - **`action.risk.param._risk_message = <string>`**
   - Defines the message to be displayed for a risk event, incorporating dynamic variables for user and source IP address.
 - **`action.risk.param._risk`**
@@ -107,13 +106,13 @@ This page provides detailed documentation for the ESCU saved search configuratio
 - **`action.risk.param.verbose = 0`**
   - Controls verbosity of the risk action’s output, with `0` disabling verbose output.
 
-### Correlation Search Settings
+#### Correlation Search Settings
 - **`action.correlationsearch.label = ESCU - <Detection Name> - Rule`**
   - Provides a descriptive label for the correlation search.
 - **`action.correlationsearch.annotations = {"analytic_story": ["Suspicious Okta Activity"], "cis20": ["CIS 10"], "confidence": 60, "impact": 80, "mitre_attack": ["T1586", "T1586.003", "T1078", "T1078.004", "T1621"], "nist": ["DE.CM"]}`**
   - Adds metadata annotations to the correlation search, linking to analytic stories, compliance standards, and attack techniques.
 
-### Notable Event Configuration
+#### Notable Event Configuration
 - **`action.notable.param.nes_fields`**
   - Specifies the fields to be included in the notable event summary.
 - **`action.notable.param.rule_description`**
