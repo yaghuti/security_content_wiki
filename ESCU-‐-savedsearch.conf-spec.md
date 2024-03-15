@@ -73,7 +73,7 @@ This page provides detailed documentation for the ESCU saved search configuratio
 ### Additional Settings
 - **`enableSched = 1`**
   - Enables scheduling for the search.
-- **`relation`**
+- **`relation  = greater than`**
   - Sets the relational condition for alert triggering.
 - **`quantity`**
   - Sets the threshold quantity for the relational condition.
