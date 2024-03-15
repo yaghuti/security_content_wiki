@@ -123,3 +123,53 @@ This page provides detailed documentation for the ESCU saved search configuratio
   - Associates the search with a security domain, in this case, identity security.
 - **`action.notable.param.severity`**
   - Defines the severity of the notable event, marked as high.
+
+## Sample Config Configuration:
+
+```
+[ESCU - Okta Authentication Failed During MFA Challenge - DM - Rule]
+action.escu = 0
+action.escu.enabled = 1
+description = The following analytic identifies an authentication attempt event against an Okta tenant that fails during the Multi-Factor Authentication (MFA) challenge. This detection is written against the Authentication datamodel and we look for a specific failed events where the authentication signature is `user.authentication.auth_via_mfa`. This behavior may represent an adversary trying to authenticate with compromised credentials for an account that has multi-factor authentication enabled.
+action.escu.mappings = {"cis20": ["CIS 10"], "mitre_attack": ["T1586", "T1586.003", "T1078", "T1078.004", "T1621"], "nist": ["DE.CM"]}
+action.escu.data_models = ["Authentication"]
+action.escu.eli5 = The following analytic identifies an authentication attempt event against an Okta tenant that fails during the Multi-Factor Authentication (MFA) challenge. This detection is written against the Authentication datamodel and we look for a specific failed events where the authentication signature is `user.authentication.auth_via_mfa`. This behavior may represent an adversary trying to authenticate with compromised credentials for an account that has multi-factor authentication enabled.
+action.escu.how_to_implement = UPDATE_HOW_TO_IMPLEMENT
+action.escu.known_false_positives = UPDATE_KNOWN_FALSE_POSITIVES
+action.escu.creation_date = 2024-03-11
+action.escu.modification_date = 2024-03-11
+action.escu.confidence = high
+action.escu.full_search_name = ESCU - Okta Authentication Failed During MFA Challenge - DM - Rule
+action.escu.search_type = detection
+action.escu.product = ["Splunk Enterprise", "Splunk Enterprise Security", "Splunk Cloud"]
+action.escu.providing_technologies = ["Okta"]
+action.escu.analytic_story = ["Suspicious Okta Activity"]
+action.risk = 1
+action.risk.param._risk_message = A user [$user$] has failed to authenticate via MFA from IP Address - [$src$]"
+action.risk.param._risk = [{"risk_object_field": "user", "risk_object_type": "other", "risk_score": 48}, {"threat_object_field": "src", "threat_object_type": "ip_address"}]
+action.risk.param._risk_score = 0
+action.risk.param.verbose = 0
+cron_schedule = 0 * * * *
+dispatch.earliest_time = -70m@m
+dispatch.latest_time = -10m@m
+action.correlationsearch.enabled = 1
+action.correlationsearch.label = ESCU - Okta Authentication Failed During MFA Challenge - DM - Rule
+action.correlationsearch.annotations = {"analytic_story": ["Suspicious Okta Activity"], "cis20": ["CIS 10"], "confidence": 60, "impact": 80, "mitre_attack": ["T1586", "T1586.003", "T1078", "T1078.004", "T1621"], "nist": ["DE.CM"]}
+schedule_window = auto
+action.notable = 1
+action.notable.param.nes_fields = user,dest
+action.notable.param.rule_description = The following analytic identifies an authentication attempt event against an Okta tenant that fails during the Multi-Factor Authentication (MFA) challenge. This detection is written against the Authentication datamodel and we look for a specific failed events where the authentication signature is `user.authentication.auth_via_mfa`. This behavior may represent an adversary trying to authenticate with compromised credentials for an account that has multi-factor authentication enabled.
+action.notable.param.rule_title = Okta Authentication Failed During MFA Challenge - DM
+action.notable.param.security_domain = identity
+action.notable.param.severity = high
+alert.digest_mode = 1
+disabled = true
+enableSched = 1
+allow_skew = 100%
+counttype = number of events
+relation = greater than
+quantity = 0
+realtime_schedule = 0
+is_visible = false
+search = | tstats `security_content_summariesonly` count min(_time) as firstTime max(_time) as lastTime  values(Authentication.app) as app values(Authentication.reason) as reason values(Authentication.signature) as signature  values(Authentication.method) as method  from datamodel=Authentication where  Authentication.signature=user.authentication.auth_via_mfa Authentication.action = failure by _time Authentication.src Authentication.user Authentication.dest Authentication.action | `drop_dm_object_name("Authentication")` | `security_content_ctime(firstTime)` | `security_content_ctime(lastTime)`| iplocation src | `okta_authentication_failed_during_mfa_challenge___dm_filter`
+```
