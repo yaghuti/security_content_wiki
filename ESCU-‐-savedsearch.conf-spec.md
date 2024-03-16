@@ -4,7 +4,7 @@ This page provides detailed documentation for the ESCU saved search configuratio
 
 #### Stanza Header
 - **`[ESCU - <Detection Name> - Rule]`**
-  - The name of the saved search. Detection Name has to be less than 
+  - The name of the saved search. Detection Name has to be less than 67 characters (Excluding ESCU - , - Rule)
 
 #### ESCU/Saved Search Settings
 - **`action.escu = 0`**
@@ -44,7 +44,7 @@ This page provides detailed documentation for the ESCU saved search configuratio
 - **`action.escu.full_search_name =  ESCU - <Detection Name> - Rule`**
   - The full name of the search within the ESCU framework.
 - **`action.escu.search_type = detection`**
-  - Specifies the type of search, here a detection search, investigation
+  - Specifies the type of search: detection (For all ESCU searches)
 
 #### Product and Technology
 - **`action.escu.product = ["Splunk Enterprise", "Splunk Enterprise Security", "Splunk Cloud"]`**
