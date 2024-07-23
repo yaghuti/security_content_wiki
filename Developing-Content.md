@@ -2,8 +2,8 @@
 
 ## Pre-Requisites 
 Before you begin, follow the steps to install **dependencies and pre-commit hooks** 
-1. Create virtualenv and install requirements: `virtualenv venv && source venv/bin/activate && pip install -r requirements.txt`.
-2. Install `pre-commit install`.
+1. Install `contentctl`. This requires Python 3.11 or Python 3.12. We recommend using [pipx](https://pipx.pypa.io/stable/) to install and manage it (`pipx install contentctl`).
+2. Install pre-commit hooks (`pre-commit install`).
 
 ## Writing Content
 1. Select the content [piece](https://github.com/splunk/security-content/wiki/Content-Structure) you want to write. 
@@ -11,18 +11,11 @@ Before you begin, follow the steps to install **dependencies and pre-commit hook
 3. Make a pull request. 
 
 ## Testing New Content
-1. Run `python bin/validate.py --path . --verbose`
-2. For modifications to schema/tags related to detections run `python bin/generate.py -p . -o package`
+1. Run `contentctl validate` locally. This will ensure your new content or changes are all still valid.
+2. If you'd like to run detection testing locally, you can run `contentctl test --no_enable-integration-testing  mode:changes --mode.target-branch develop` which will run unit testing for each detection that differs from the develop branch.
 
-The pull request will trigger a CircleCI, a continuous-integration app that integrates with a VCS and automatically runs a series of steps every time that it detects a change to your repository. A CircleCI build consists of a series of steps, usually validation, generation and deployment. If your tests pass, you're good to go! A repository maintainer will make sure the PR makes it into the next release. Which will be deployed in the [ESCU app](https://splunkbase.splunk.com/app/3449/) and our [API](https://docs.splunkresearch.com/?version=latest). If the CircleCI check fails, refer to [troubleshooting](https://github.com/splunk/security-content/wiki/Troubleshooting) first, some problems are easily described by CI. If not do not worry, our team will work with you in the PR to make sure your content passes validation and its part of our next release! 
+The pull request will trigger a GitHub Actions run, a continuous-integration app that integrates with a VCS and automatically runs a series of steps every time that it detects a change to your repository. A GitHub Actions run consists of a series of steps, usually build, test, and deployment. If your tests pass, you're good to go! A repository maintainer will make sure the PR makes it into the next release. Which will be deployed in the [ESCU app](https://splunkbase.splunk.com/app/3449/). If the GitHub Actions check fails, refer to [troubleshooting](https://github.com/splunk/security-content/wiki/Troubleshooting) first, some problems are easily described by CI. If not do not worry, our team will work with you in the PR to make sure your content passes validation and its part of our next release! 
 
-# Testing and Validating Spec Changes
 
-Changes to spec along with validation of the fields described in the spec can be accomplished by modifying two files located in:
-
-1. github/security-content/spec
-2. github/security-content/docs/spec
-
-A markdown generation tool for testing changes to the spec needs to be manually installed and run against the relevant json.  The tool can be installed from: [jsonschema2md](https://github.com/adobe/jsonschema2md)
 
 For a more detailed explanation on how to contribute to the project, please see ["Contributing"](https://github.com/splunk/security-content/wiki/Contributing-to-the-Project)
