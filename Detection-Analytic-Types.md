@@ -9,7 +9,7 @@ See https://car.mitre.org/Glossary for inspiration.
 | Anomaly | An anomaly analytic triggers on behavior that is not normally observed. Anomalous may not be explicitly malicious but may be suspect. For example, detection of executables that have never been run before or a process using the network which does not normally use the network. Like Situational Awareness analytics, anomaly analytics don’t necessarily indicate an attack. | [Abnormally High Number Of Cloud Infrastructure API Calls](https://github.com/splunk/security_content/blob/develop/detections/cloud/abnormally_high_number_of_cloud_infrastructure_api_calls.yml) | 
 | Hunting | A detection that increases the risk of an asset or entity, although tends to be too noisy to generate a notable event by itself. It leverages aggregated risk from various other detections to produce a notable. Also known as hunting queries.  | [Common Ransomware Extensions ](https://github.com/splunk/security_content/blob/develop/detections/endpoint/common_ransomware_extensions.yml) |
 | Correlation | An analytic that correlates various detection results to correlate a high level threat and its primary purpose is to generate a notable. | Spreading Ransomware Infection | 
-| Investigation | An analytic that is used to investigate an entity or asset, usually executed after another analytic type finds results as a next step in the workflow. They are executed after a result is found as  | [AWS Investigate User Activities By ARN](https://github.com/splunk/security_content/blob/develop/investigations/aws_investigate_user_activities_by_arn.yml) |
+
 
 Below is a table showing how each type is configured out of the box in ESCU. 
 
@@ -20,4 +20,3 @@ Below is a table showing how each type is configured out of the box in ESCU.
 | Baseline | No | Yes | Yes | No | Yes | No |
 | Anomaly | No | Yes | No | No | Yes | No |
 | Correlation | Yes | No | Yes | No | Yes | Yes |
-| Investigation | No | No | Yes | No | No | No |
