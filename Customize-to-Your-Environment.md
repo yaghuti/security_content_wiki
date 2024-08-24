@@ -7,7 +7,7 @@ This might not be the exact source type used in your organization and Splunk dep
 
 ## Customizing scheduling and alert actions with deployments
 
-To customize how often any detection run and what alert action they should automatically perform, a deployment configuration must be created. By default, security-content includes a deployment called [Enterprise Security deployment configuration](https://github.com/splunk/security-content/blob/develop/deployments/10_enterprise_security_deployment_configuration.yml) which schedules all Analytic Stories to run hourly and search in the last 60 minutes. The default deployment also has an alert action configure that creates a notable event in Enterprise Security if anything is detected. This can be easily customized by individual Analytic Story, and Detection by setting a matching tag value. For example: 
+To customize how often any detection run and what alert action they should automatically perform, a deployment configuration must be created. By default, security-content includes a deployment called [deployment configurations](https://github.com/splunk/security-content/blob/develop/deployments/) which schedules all Analytic Stories to run hourly and search in the last 60 minutes. The default deployment also has an alert action configure that creates a notable event in Enterprise Security if anything is detected. This can be easily customized by individual Analytic Story, and Detection by setting a matching tag value. For example: 
 
 ```
 name: Schedule Credential Dumping Daily
