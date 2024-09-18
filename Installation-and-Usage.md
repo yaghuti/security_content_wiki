@@ -1,29 +1,50 @@
 The Splunk Security Content can be used via:
 
-#### [Splunk App](https://github.com/splunk/security_content/releases)
-Grab the latest release of DA-ESS-ContentUpdate and install it on a Splunk Enterprise instance.
+#### [Github](https://github.com/splunk/security_content/releases)
+- Grab the latest release of DA-ESS-ContentUpdate and install it on a Splunk Enterprise instance.
 
-#### [API](https://docs.splunkresearch.com/?version=latest)
+#### [Splunkbase](https://github.com/splunk/security_content/releases)
+- Grab the latest release of DA-ESS-ContentUpdate from Splunkbase(https://classic.splunkbase.splunk.com/app/3449/) and install it on a Splunk Enterprise instance.
+
+#### [Enterprise Security](https://www.splunk.com/en_us/products/enterprise-security.html)
+These detections are already available in Splunk Enterprise Security via an automatic [application update process](https://docs.splunk.com/Documentation/ES/latest/Admin/Usecasecontentlibrary#Update_the_Analytic_Stories) built into the product 
+
+#### [https://www.research.splunk.com](http://research.splunk.com/)
+You can also access this content on [https://www.research.splunk.com](http://research.splunk.com/) which is updated daily with the latest content that is available in the ESCU application.
+
+# Getting Started 🚀
+
+Follow these steps to get started with Splunk Security Content.
+
+1. Clone this repository using `git clone https://github.com/splunk/security_content.git`
+2. Navigate to the repository directory using `cd security_content`
+3. Install contentctl using `pip install contentctl` to install the latest version of contentctl, this is a pre-requisite to validate, build and test the content like the Splunk Threat Research team
+
+# Quick Start 🚀
+
+1. Setup the environment
 ```
-curl -s https://content.splunkresearch.com | jq
-{
-  "hello": "welcome to Splunks Research security content api"
-}
+git clone https://github.com/splunk/security_content.git
+cd security_content
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install contentctl
+```
+2. Create a new detection.yml and answer the questions
+ ```
+ contentctl new
+ ```
+
+  **NOTE** - Make sure you update the detection.yml with the required fields and values.
+
+4. Validate your content
+```
+contentctl validate
 ```
 
-#### GitHub Workflow
-Splunk Security Content can be used from GitHub by executing the following steps:
-1. Clone the Security Content GitHub project.
-`````
-git clone git@github.com:splunk/security_content.git
-`````
-2. Change the deployment configuration under deployments/ to fit to your Splunk environment.
-3. Create virtualenv and install requirements.
-`````
-pip install virtualenv && virtualenv venv && source venv/bin/activate && pip install -r requirements.txt
-`````
-4. Run bin/generate.py with the following command.
-`````
-python bin/generate.py --path . --output package -v
-`````
-5. Copy the package folder to your Splunk instance.
+5. Build an ESCU app
+```
+contentctl build --enrichments
+```
+
+6. Test the content - Our testing framework is based on [contentctl](https://github.com/splunk/contentctl) and is extensive and flexible. Refer to the [contentctl test documentation](https://github.com/splunk/contentctl?tab=readme-ov-file#contentctl-test) to learn more about the testing framework.
