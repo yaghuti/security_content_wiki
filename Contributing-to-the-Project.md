@@ -22,9 +22,7 @@ This document is the single source of truth on how to contribute to this codebas
 When contributing to this repository, please first discuss the change you wish to make via a GitHub issue, Slack message, email, or via other channels with the owners of this repository.
 
 ##### Contributor License Agreement
-At the moment, we can only accept pull requests submitted from either:
-* Splunk employees or
-* Individuals that have signed our contributors' agreement
+We accept all pull requests from the Github community
 
 If you wish to be a contributing member of our community, please see the agreement [for individuals](https://www.splunk.com/goto/individualcontributions) or [for organizations](https://www.splunk.com/goto/contributions).
 
@@ -66,7 +64,7 @@ Here's an overview of how you can make a pull request against this project:
 3. Clone your fork using git and create a branch off of develop
 
     ```
-    $ git clone git@github.com:YOUR_GITHUB_USERNAME/security-content.git
+    $ git@github.com:YOUR_GITHUB_USERNAME/security_content.git
     $ cd security-content
 
     # This project uses 'develop' for all development activity, so create your branch off that
@@ -120,8 +118,10 @@ If you need help, feel free to tag one of the active maintainers of this project
 # Active maintainers marked with (*)
 
 (*) Bhavin Patel
-(*) David Dorsey
 (*) Jose Hernandez
-(*) Rico Valdez
+(*) Lou Stella
 (*) Patrick Bareib
+(*) Teoderick Contreras
+(*) Eric Mcginnis
+
 ```
