@@ -2,6 +2,8 @@ Splunk Security Content detections has a field called `type` these types will dr
 
 See https://car.mitre.org/Glossary for inspiration.
 
+#### Type
+
 | Type        | Description | Example      |   
 | ----------- | ----------- |--------------|
 | TTP | A TTP analytic is designed to detect a certain adversary tactic, technique or procedure. | [Attempted Credential Dump From Registry via Reg exe](https://github.com/splunk/security_content/blob/develop/detections/endpoint/attempted_credential_dump_from_registry_via_reg_exe.yml) |
@@ -11,6 +13,7 @@ See https://car.mitre.org/Glossary for inspiration.
 | Correlation | An analytic that correlates various detection results to correlate a high level threat and its primary purpose is to generate a notable. | [Windows Post Exploitation Risk Behavior](https://github.com/splunk/security_content/blob/develop/detections/endpoint/windows_post_exploitation_risk_behavior.yml) | 
 | Investigation | These analytics are searches that leverage tokens and are used in the [prebuilt panels](https://github.com/splunk/security_content/tree/v4.30.0/dist/DA-ESS-ContentUpdate/default/data/ui/panels) shipped by ESCU for Investigative Workbench in ES | [AWS Investigate Security Hub alerts by dest ](https://github.com/splunk/security_content/blob/develop/investigations/aws_investigate_security_hub_alerts_by_dest.yml)
 
+#### Detection Configurations
 Below is a table showing how each type is configured out of the box in ESCU. 
 
 | Analytic Type | Generates Notable | Increases Risk (RBA) | Triggers Playbook | Tied to a Dashboard | Runs on CRON Schedule | Enabled OOB |  
@@ -22,12 +25,7 @@ Below is a table showing how each type is configured out of the box in ESCU.
 | Correlation | Yes | No | Yes | No | Yes | Yes |
 | Investigation | No | No | No | Yes | No | No |
 
-
-
-
-
-
-
+#### Status
 Status | Explanation
 -- | --
 Production | These are fully-tested detections in Splunk Enterprise Security environment with latest Splunk TAs installed against the associated attack data
