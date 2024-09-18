@@ -21,3 +21,17 @@ Below is a table showing how each type is configured out of the box in ESCU.
 | Anomaly | No | Yes | No | No | Yes | No |
 | Correlation | Yes | No | Yes | No | Yes | Yes |
 | Investigation | No | No | No | Yes | No | No |
+
+
+
+
+
+
+
+Status | Explanation
+-- | --
+Production | These are fully-tested detections in Splunk Enterprise Security environment with latest Splunk TAs installed against the associated attack data
+Experimental | These detections DO NOT have an associated attack data because we were either not able to simulate the attack or that the attack data contains sensitive information that we were not able to publish to our attack data repository
+Deprecated | These detections are deprecated and no longer supported or maintained by Splunk. Usually, the description of a deprecated detections have a note regarding why the said detection is deprecated and if there is a replacement detection available
+
+</div></b>
